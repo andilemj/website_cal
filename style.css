@@ -5,7 +5,7 @@ header {
   background: black;
   padding: 10px 10px  ;
   text-align: center;
-  transition: color 2s;
+  transition: color 3s;
   
 }
 
@@ -16,10 +16,6 @@ body {
   transition: padding 2s;
 }
 
-button :hover {
-  background: steelblue;
-  transition: background 1s;
-}
 footer {
   margin: 0px;
   font-size: 11;
@@ -28,4 +24,4 @@ footer {
   padding: 10px 10px 10px;
   display: justify;
   text-align: left;
-  transition: font-size color 2s;
+  transition: color 2s;
