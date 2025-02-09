@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Annuity Due Calculator</title>
+    <link href="css/style.css" rel="stylesheet" type="text/css">
+</head>
+<body>
+
+    <header>
+        <h1>Annuity Due Calculator</h1>
+        <h3>Plan for the Future</h3>
+    </header>
+
+    <main>
+        <section id="calculator">
+            <h2>Calculate Your Annuity</h2>
+            <form id="annuityForm">
+                <label for="Payments">Regular Payments:</label>
+                <input type="number" id="Payments" placeholder="Enter payment amount" required>
+
+                <label for="Period">Number of Payments (per year):</label>
+                <input type="number" id="Period" placeholder="Number of Payments" required>
+
+                <label for="Years">Years in Total:</label>
+                <input type="number" id="Years" placeholder="Years" required>
+
+                <label for="Rate">Interest Rate (% per year):</label>
+                <input type="number" id="Rate" placeholder="Interest" required step="any">
+
+                <button type="submit">Calculate</button>
+            </form>
+
+            <!-- Original Output Box (Charts Removed) -->
+            <div id="present"></div>
+        </section>
+
+        <!-- Keeping the Original Media Section -->
+        <section id="info">
+            <h3>What is an Annuity Due?</h3>
+            <p>An annuity due is an annuity whose payment is due immediately at the beginning of each period.</p>
+            <iframe width="560" height="315"
+                    src="https://www.youtube.com/embed/aiTKSpMvCpc?rel=0&modestbranding=1&showinfo=0"
+                    title="YouTube video player"
+                    frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                    allowfullscreen>
+            </iframe>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Annuity Calculator. All rights reserved.</p>
+    </footer>
+
+    <script type="module" src="js/script.js"></script>
+</body>
+</html>

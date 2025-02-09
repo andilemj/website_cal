@@ -1,0 +1,193 @@
+/* Default Light Mode */
+body {
+    font-family: 'Arial', sans-serif;
+    background: linear-gradient(to right, #0062E6, #33AEFF);
+    color: black;
+    text-align: center;
+    margin: 0;
+    padding: 20px;
+    transition: background 0.5s ease-in-out, color 0.5s ease-in-out;
+}
+
+ /* Dark Mode */
+ body.dark-mode {
+        background: linear-gradient(to right, #1a1a2e, #16213e);
+        color: white;
+}
+
+/* Form Container */
+#calculator {
+    background: white;
+    color: black;
+    transition: background 0.5s ease-in-out, color 0.5s ease-in-out;
+}
+
+body.dark-mode #calculator {
+    background: #1f1f1f;
+    color: white;
+    box-shadow: 0px 4px 10px rgba(255, 255, 255, 0.2);
+}
+
+/* Dark Mode Button */
+#darkModeToggle {
+    position: fixed;
+    top: 10px;
+    right: 10px;
+    background: #007BFF;
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.3s ease-in-out;
+}
+
+    #darkModeToggle:hover {
+        background: #0056b3;
+    }
+
+
+/* General Styles */
+body {
+    font-family: 'Arial', sans-serif;
+    background: linear-gradient(to right, #0062E6, #33AEFF);
+    color: white;
+    text-align: center;
+    margin: 0;
+    padding: 20px;
+    animation: backgroundAnimation 8s infinite alternate ease-in-out;
+}
+
+/* Background Animation */
+@keyframes backgroundAnimation {
+    0% {
+        background: linear-gradient(to right, #0062E6, #33AEFF);
+    }
+
+    100% {
+        background: linear-gradient(to right, #0052D4, #65C7F7);
+    }
+}
+
+
+/* Header */
+header {
+    background: none;
+    padding: 20px;
+    text-align: center;
+    animation: fadeIn 1s ease-in-out;
+}
+
+/* Form Container */
+#calculator {
+    max-width: 400px;
+    margin: auto;
+    padding: 20px;
+    background: white;
+    color: black;
+    border-radius: 10px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+    transform: translateY(30px);
+    opacity: 0;
+    animation: slideIn 1s ease-out forwards;
+}
+
+/* Form Fields */
+#annuityForm label {
+    font-weight: bold;
+    display: block;
+    margin-top: 10px;
+}
+
+#annuityForm input {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+    transition: all 0.3s ease-in-out;
+}
+
+    /* Input Focus Animation */
+    #annuityForm input:focus {
+        border-color: #007BFF;
+        box-shadow: 0 0 10px rgba(0, 123, 255, 0.5);
+        transform: scale(1.02);
+    }
+
+/* Button with Press Effect */
+#annuityForm button {
+    width: 100%;
+    padding: 12px;
+    font-size: 18px;
+    background: #007BFF;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+}
+
+    #annuityForm button:hover {
+        background: #0056b3;
+        transform: scale(1.05);
+    }
+
+    #annuityForm button:active {
+        transform: scale(0.95);
+    }
+
+/* Output Box */
+#present {
+    display: none; /* Initially hidden */
+    font-size: 18px;
+    font-weight: bold;
+    margin-top: 20px;
+    padding: 15px;
+    background: #E8F0FE;
+    border-left: 5px solid #007BFF;
+    text-align: center;
+    opacity: 0;
+    transform: scale(0.9);
+    transition: opacity 0.5s ease-in-out, transform 0.3s ease-in-out;
+}
+
+    #present.show {
+        display: block;
+        opacity: 1;
+        transform: scale(1);
+    }
+
+
+
+/* Footer */
+footer {
+    margin-top: 30px;
+    background: black;
+    padding: 10px;
+    text-align: center;
+    animation: fadeIn 1s ease-in-out;
+}
+
+/* Animations */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes slideIn {
+    from {
+        transform: translateY(30px);
+        opacity: 0;
+    }
+
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
